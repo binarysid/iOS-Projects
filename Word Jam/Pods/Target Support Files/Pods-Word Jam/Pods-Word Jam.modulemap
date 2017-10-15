@@ -1,0 +1,6 @@
+framework module Pods_Word_Jam {
+  umbrella header "Pods-Word Jam-umbrella.h"
+
+  export *
+  module * { export * }
+}

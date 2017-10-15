@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A8CD84F957E5151F6FBBF19C /* Pods_Word_Jam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1849C7F5147636FBF4DF6334 /* Pods_Word_Jam.framework */; };
+		D012ACF61F920ABA00ED671E /* WordMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D012ACF51F920ABA00ED671E /* WordMapper.swift */; };
+		D012ACF81F920B2600ED671E /* RestURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D012ACF71F920B2600ED671E /* RestURL.swift */; };
+		D012ACFA1F92121400ED671E /* DefinitionMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D012ACF91F92121400ED671E /* DefinitionMapper.swift */; };
+		D012ACFC1F9212FE00ED671E /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = D012ACFB1F9212FE00ED671E /* Resources.swift */; };
+		D012ACFE1F923C4300ED671E /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D012ACFD1F923C4300ED671E /* DataStore.swift */; };
+		D012AD001F9259D900ED671E /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D012ACFF1F9259D900ED671E /* Extension.swift */; };
+		D02D18301F93363400DB1F7F /* SlideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02D182F1F93363400DB1F7F /* SlideMenuController.swift */; };
+		D02D18321F93363F00DB1F7F /* ExSlideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02D18311F93363F00DB1F7F /* ExSlideMenuController.swift */; };
+		D02D18341F93365F00DB1F7F /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02D18331F93365F00DB1F7F /* SettingVC.swift */; };
+		D02D18361F93377000DB1F7F /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02D18351F93376F00DB1F7F /* LeftViewController.swift */; };
+		D02D18611F9339D900DB1F7F /* ImageHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02D18371F9339D900DB1F7F /* ImageHeaderView.swift */; };
+		D02D18621F9339D900DB1F7F /* ImageHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D02D18381F9339D900DB1F7F /* ImageHeaderView.xib */; };
+		D02D18891F933A2200DB1F7F /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02D18861F933A2200DB1F7F /* BaseTableViewCell.swift */; };
+		D02D188A1F933A2200DB1F7F /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02D18871F933A2200DB1F7F /* DataTableViewCell.swift */; };
+		D02D188B1F933A2200DB1F7F /* DataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D02D18881F933A2200DB1F7F /* DataTableViewCell.xib */; };
+		D02D188E1F93685900DB1F7F /* arrow_drawer.png in Resources */ = {isa = PBXBuildFile; fileRef = D02D188D1F93685900DB1F7F /* arrow_drawer.png */; };
+		D0646D881F915D8A00A7FCDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0646D871F915D8A00A7FCDC /* AppDelegate.swift */; };
+		D0646D8A1F915D8A00A7FCDC /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0646D891F915D8A00A7FCDC /* HomeVC.swift */; };
+		D0646D8D1F915D8A00A7FCDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0646D8B1F915D8A00A7FCDC /* Main.storyboard */; };
+		D0646D901F915D8A00A7FCDC /* Word_Jam.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D0646D8E1F915D8A00A7FCDC /* Word_Jam.xcdatamodeld */; };
+		D0646D921F915D8A00A7FCDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0646D911F915D8A00A7FCDC /* Assets.xcassets */; };
+		D0646D951F915D8A00A7FCDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0646D931F915D8A00A7FCDC /* LaunchScreen.storyboard */; };
+		D0ABC1C31F93BC2700B26E22 /* ProgressLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ABC1C21F93BC2700B26E22 /* ProgressLoader.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1849C7F5147636FBF4DF6334 /* Pods_Word_Jam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Word_Jam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E02843304A61B5CF476AE92 /* Pods-Word Jam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Word Jam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Word Jam/Pods-Word Jam.debug.xcconfig"; sourceTree = "<group>"; };
+		67FE9D3871EE62D62D8FA3E6 /* Pods-Word Jam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Word Jam.release.xcconfig"; path = "Pods/Target Support Files/Pods-Word Jam/Pods-Word Jam.release.xcconfig"; sourceTree = "<group>"; };
+		D012ACF51F920ABA00ED671E /* WordMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordMapper.swift; sourceTree = "<group>"; };
+		D012ACF71F920B2600ED671E /* RestURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestURL.swift; sourceTree = "<group>"; };
+		D012ACF91F92121400ED671E /* DefinitionMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefinitionMapper.swift; sourceTree = "<group>"; };
+		D012ACFB1F9212FE00ED671E /* Resources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		D012ACFD1F923C4300ED671E /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		D012ACFF1F9259D900ED671E /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		D02D182E1F93362C00DB1F7F /* SlideMenuControllerSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlideMenuControllerSwift.h; sourceTree = "<group>"; };
+		D02D182F1F93363400DB1F7F /* SlideMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenuController.swift; sourceTree = "<group>"; };
+		D02D18311F93363F00DB1F7F /* ExSlideMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExSlideMenuController.swift; sourceTree = "<group>"; };
+		D02D18331F93365F00DB1F7F /* SettingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
+		D02D18351F93376F00DB1F7F /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
+		D02D18371F9339D900DB1F7F /* ImageHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageHeaderView.swift; sourceTree = "<group>"; };
+		D02D18381F9339D900DB1F7F /* ImageHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageHeaderView.xib; sourceTree = "<group>"; };
+		D02D18861F933A2200DB1F7F /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		D02D18871F933A2200DB1F7F /* DataTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTableViewCell.swift; sourceTree = "<group>"; };
+		D02D18881F933A2200DB1F7F /* DataTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DataTableViewCell.xib; sourceTree = "<group>"; };
+		D02D188D1F93685900DB1F7F /* arrow_drawer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_drawer.png; sourceTree = "<group>"; };
+		D0646D841F915D8A00A7FCDC /* Word Jam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Word Jam.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0646D871F915D8A00A7FCDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D0646D891F915D8A00A7FCDC /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		D0646D8C1F915D8A00A7FCDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D0646D8F1F915D8A00A7FCDC /* Word_Jam.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Word_Jam.xcdatamodel; sourceTree = "<group>"; };
+		D0646D911F915D8A00A7FCDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0646D941F915D8A00A7FCDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D0646D961F915D8A00A7FCDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0ABC1C21F93BC2700B26E22 /* ProgressLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressLoader.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0646D811F915D8A00A7FCDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8CD84F957E5151F6FBBF19C /* Pods_Word_Jam.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13811CD5130AF297A1494976 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1849C7F5147636FBF4DF6334 /* Pods_Word_Jam.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA417F4F9855A9F34C74DE41 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4E02843304A61B5CF476AE92 /* Pods-Word Jam.debug.xcconfig */,
+				67FE9D3871EE62D62D8FA3E6 /* Pods-Word Jam.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D02D188C1F93684F00DB1F7F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D02D188D1F93685900DB1F7F /* arrow_drawer.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		D05F1EAD1F92AA2C009736E0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D012ACFD1F923C4300ED671E /* DataStore.swift */,
+				D012ACF51F920ABA00ED671E /* WordMapper.swift */,
+				D012ACF91F92121400ED671E /* DefinitionMapper.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D05F1EAF1F92AA70009736E0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D0646D891F915D8A00A7FCDC /* HomeVC.swift */,
+				D02D18331F93365F00DB1F7F /* SettingVC.swift */,
+				D02D18311F93363F00DB1F7F /* ExSlideMenuController.swift */,
+				D02D182F1F93363400DB1F7F /* SlideMenuController.swift */,
+				D02D18351F93376F00DB1F7F /* LeftViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D05F1EB01F92AA88009736E0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D0ABC1C21F93BC2700B26E22 /* ProgressLoader.swift */,
+				D02D18861F933A2200DB1F7F /* BaseTableViewCell.swift */,
+				D02D18871F933A2200DB1F7F /* DataTableViewCell.swift */,
+				D02D18881F933A2200DB1F7F /* DataTableViewCell.xib */,
+				D02D18371F9339D900DB1F7F /* ImageHeaderView.swift */,
+				D02D18381F9339D900DB1F7F /* ImageHeaderView.xib */,
+				D05F1EB11F92AAA1009736E0 /* StoryBoards */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		D05F1EB11F92AAA1009736E0 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				D0646D8B1F915D8A00A7FCDC /* Main.storyboard */,
+				D0646D931F915D8A00A7FCDC /* LaunchScreen.storyboard */,
+			);
+			name = StoryBoards;
+			sourceTree = "<group>";
+		};
+		D05F1EB21F92AAB7009736E0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D02D188C1F93684F00DB1F7F /* Images */,
+				D0646D8E1F915D8A00A7FCDC /* Word_Jam.xcdatamodeld */,
+				D0646D961F915D8A00A7FCDC /* Info.plist */,
+				D0646D911F915D8A00A7FCDC /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D05F1EB31F92AB20009736E0 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				D02D182E1F93362C00DB1F7F /* SlideMenuControllerSwift.h */,
+				D012ACFB1F9212FE00ED671E /* Resources.swift */,
+				D012ACF71F920B2600ED671E /* RestURL.swift */,
+				D012ACFF1F9259D900ED671E /* Extension.swift */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		D0646D7B1F915D8A00A7FCDC = {
+			isa = PBXGroup;
+			children = (
+				D0646D861F915D8A00A7FCDC /* Word Jam */,
+				D0646D851F915D8A00A7FCDC /* Products */,
+				AA417F4F9855A9F34C74DE41 /* Pods */,
+				13811CD5130AF297A1494976 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D0646D851F915D8A00A7FCDC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0646D841F915D8A00A7FCDC /* Word Jam.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0646D861F915D8A00A7FCDC /* Word Jam */ = {
+			isa = PBXGroup;
+			children = (
+				D05F1EAD1F92AA2C009736E0 /* Model */,
+				D05F1EAF1F92AA70009736E0 /* ViewControllers */,
+				D05F1EB01F92AA88009736E0 /* Views */,
+				D05F1EB31F92AB20009736E0 /* Helper */,
+				D05F1EB21F92AAB7009736E0 /* Resources */,
+				D0646D871F915D8A00A7FCDC /* AppDelegate.swift */,
+			);
+			path = "Word Jam";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0646D831F915D8A00A7FCDC /* Word Jam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0646D991F915D8A00A7FCDC /* Build configuration list for PBXNativeTarget "Word Jam" */;
+			buildPhases = (
+				D17954FA5CE4EEE2E92A0216 /* [CP] Check Pods Manifest.lock */,
+				D0646D801F915D8A00A7FCDC /* Sources */,
+				D0646D811F915D8A00A7FCDC /* Frameworks */,
+				D0646D821F915D8A00A7FCDC /* Resources */,
+				F600602F6071C88393952792 /* [CP] Embed Pods Frameworks */,
+				A2086A97AA182576A26CFE89 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Word Jam";
+			productName = "Word Jam";
+			productReference = D0646D841F915D8A00A7FCDC /* Word Jam.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0646D7C1F915D8A00A7FCDC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = StatUp;
+				TargetAttributes = {
+					D0646D831F915D8A00A7FCDC = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 8N97M923LL;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D0646D7F1F915D8A00A7FCDC /* Build configuration list for PBXProject "Word Jam" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D0646D7B1F915D8A00A7FCDC;
+			productRefGroup = D0646D851F915D8A00A7FCDC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0646D831F915D8A00A7FCDC /* Word Jam */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0646D821F915D8A00A7FCDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D02D188E1F93685900DB1F7F /* arrow_drawer.png in Resources */,
+				D02D188B1F933A2200DB1F7F /* DataTableViewCell.xib in Resources */,
+				D0646D951F915D8A00A7FCDC /* LaunchScreen.storyboard in Resources */,
+				D0646D921F915D8A00A7FCDC /* Assets.xcassets in Resources */,
+				D0646D8D1F915D8A00A7FCDC /* Main.storyboard in Resources */,
+				D02D18621F9339D900DB1F7F /* ImageHeaderView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A2086A97AA182576A26CFE89 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Word Jam/Pods-Word Jam-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D17954FA5CE4EEE2E92A0216 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Word Jam-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F600602F6071C88393952792 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Word Jam/Pods-Word Jam-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSAutoScaling/AWSAutoScaling.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCloudWatch/AWSCloudWatch.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognito/AWSCognito.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSDynamoDB/AWSDynamoDB.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSEC2/AWSEC2.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSElasticLoadBalancing/AWSElasticLoadBalancing.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSIoT/AWSIoT.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSKinesis/AWSKinesis.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSLambda/AWSLambda.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSLex/AWSLex.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSMachineLearning/AWSMachineLearning.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSMobileAnalytics/AWSMobileAnalytics.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSPinpoint/AWSPinpoint.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSPolly/AWSPolly.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSRekognition/AWSRekognition.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSS3/AWSS3.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSSES/AWSSES.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSSNS/AWSSNS.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSSQS/AWSSQS.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSSimpleDB/AWSSimpleDB.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/SlideMenuControllerSwift/SlideMenuControllerSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAutoScaling.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCloudWatch.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognito.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProvider.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSDynamoDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSEC2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSElasticLoadBalancing.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSIoT.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSKinesis.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSLambda.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSLex.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSMachineLearning.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSMobileAnalytics.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSPinpoint.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSPolly.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSRekognition.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSS3.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSSES.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSSNS.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSSQS.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSSimpleDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SlideMenuControllerSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Word Jam/Pods-Word Jam-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0646D801F915D8A00A7FCDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D012AD001F9259D900ED671E /* Extension.swift in Sources */,
+				D02D18341F93365F00DB1F7F /* SettingVC.swift in Sources */,
+				D012ACF61F920ABA00ED671E /* WordMapper.swift in Sources */,
+				D012ACFE1F923C4300ED671E /* DataStore.swift in Sources */,
+				D02D18361F93377000DB1F7F /* LeftViewController.swift in Sources */,
+				D012ACFA1F92121400ED671E /* DefinitionMapper.swift in Sources */,
+				D0646D8A1F915D8A00A7FCDC /* HomeVC.swift in Sources */,
+				D02D18611F9339D900DB1F7F /* ImageHeaderView.swift in Sources */,
+				D02D18321F93363F00DB1F7F /* ExSlideMenuController.swift in Sources */,
+				D012ACFC1F9212FE00ED671E /* Resources.swift in Sources */,
+				D02D18301F93363400DB1F7F /* SlideMenuController.swift in Sources */,
+				D0646D901F915D8A00A7FCDC /* Word_Jam.xcdatamodeld in Sources */,
+				D0646D881F915D8A00A7FCDC /* AppDelegate.swift in Sources */,
+				D02D18891F933A2200DB1F7F /* BaseTableViewCell.swift in Sources */,
+				D0ABC1C31F93BC2700B26E22 /* ProgressLoader.swift in Sources */,
+				D012ACF81F920B2600ED671E /* RestURL.swift in Sources */,
+				D02D188A1F933A2200DB1F7F /* DataTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D0646D8B1F915D8A00A7FCDC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0646D8C1F915D8A00A7FCDC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D0646D931F915D8A00A7FCDC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0646D941F915D8A00A7FCDC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D0646D971F915D8A00A7FCDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D0646D981F915D8A00A7FCDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0646D9A1F915D8A00A7FCDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E02843304A61B5CF476AE92 /* Pods-Word Jam.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8N97M923LL;
+				INFOPLIST_FILE = "Word Jam/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.StatUp.Word-Jam";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D0646D9B1F915D8A00A7FCDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67FE9D3871EE62D62D8FA3E6 /* Pods-Word Jam.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8N97M923LL;
+				INFOPLIST_FILE = "Word Jam/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.StatUp.Word-Jam";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0646D7F1F915D8A00A7FCDC /* Build configuration list for PBXProject "Word Jam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0646D971F915D8A00A7FCDC /* Debug */,
+				D0646D981F915D8A00A7FCDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0646D991F915D8A00A7FCDC /* Build configuration list for PBXNativeTarget "Word Jam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0646D9A1F915D8A00A7FCDC /* Debug */,
+				D0646D9B1F915D8A00A7FCDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D0646D8E1F915D8A00A7FCDC /* Word_Jam.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D0646D8F1F915D8A00A7FCDC /* Word_Jam.xcdatamodel */,
+			);
+			currentVersion = D0646D8F1F915D8A00A7FCDC /* Word_Jam.xcdatamodel */;
+			path = Word_Jam.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D0646D7C1F915D8A00A7FCDC /* Project object */;
+}

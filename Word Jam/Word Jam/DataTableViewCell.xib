@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="c3H-ux-4zZ" customClass="DataTableViewCell" customModule="Word_Jam" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="c3H-ux-4zZ" id="eWK-b2-p7R">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I30-9I-EnW">
+                        <rect key="frame" x="16" y="30" width="41" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_drawer.png" translatesAutoresizingMaskIntoConstraints="NO" id="isZ-aO-Fw1">
+                        <rect key="frame" x="289" y="33" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="Qva-7v-XZe"/>
+                            <constraint firstAttribute="width" constant="15" id="VIY-ND-sje"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nJg-0C-0LO">
+                        <rect key="frame" x="0.0" y="79" width="320" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="QZ1-yZ-tLE"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="I30-9I-EnW" firstAttribute="centerY" secondItem="eWK-b2-p7R" secondAttribute="centerY" id="CC8-Ve-GEE"/>
+                    <constraint firstItem="nJg-0C-0LO" firstAttribute="leading" secondItem="eWK-b2-p7R" secondAttribute="leading" id="FmO-fg-nC4"/>
+                    <constraint firstItem="isZ-aO-Fw1" firstAttribute="centerY" secondItem="eWK-b2-p7R" secondAttribute="centerY" id="KXp-io-AGp"/>
+                    <constraint firstAttribute="trailing" secondItem="nJg-0C-0LO" secondAttribute="trailing" id="bYf-DR-SwF"/>
+                    <constraint firstAttribute="bottom" secondItem="nJg-0C-0LO" secondAttribute="bottom" id="kez-qD-pJN"/>
+                    <constraint firstItem="I30-9I-EnW" firstAttribute="leading" secondItem="eWK-b2-p7R" secondAttribute="leading" constant="16" id="vqK-Mk-EXN"/>
+                    <constraint firstAttribute="trailing" secondItem="isZ-aO-Fw1" secondAttribute="trailing" constant="16" id="ycf-bn-o98"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="dataText" destination="I30-9I-EnW" id="vsj-dK-z9n"/>
+            </connections>
+            <point key="canvasLocation" x="201" y="43"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow_drawer.png" width="21" height="31"/>
+    </resources>
+</document>
