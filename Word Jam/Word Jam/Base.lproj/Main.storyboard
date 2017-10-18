@@ -21,34 +21,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="type word of the day" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ua5-YM-pm7">
-                                <rect key="frame" x="16" y="308.5" width="343" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="E1a-7r-c6q"/>
-                                </constraints>
-                                <nil key="textColor"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="K5q-r2-NWt">
+                                <rect key="frame" x="0.0" y="28" width="375" height="639"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <connections>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="eLZ-Vf-0cV"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="zuV-vG-cq2"/>
                                 </connections>
-                            </textField>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.19607843137254902" green="0.32156862745098036" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="ua5-YM-pm7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0Qz-Uh-BHQ"/>
-                            <constraint firstItem="ua5-YM-pm7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AeM-AD-bUk"/>
-                            <constraint firstAttribute="trailing" secondItem="ua5-YM-pm7" secondAttribute="trailing" constant="16" id="StV-Zr-LYd"/>
-                            <constraint firstItem="ua5-YM-pm7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="f0v-cV-yOR"/>
+                            <constraint firstItem="K5q-r2-NWt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="RFA-8m-WGB"/>
+                            <constraint firstItem="K5q-r2-NWt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="nYL-jn-oC7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="K5q-r2-NWt" secondAttribute="bottom" id="nul-Jh-8pp"/>
+                            <constraint firstAttribute="trailing" secondItem="K5q-r2-NWt" secondAttribute="trailing" id="w1u-w5-FCx"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="wordTextField" destination="ua5-YM-pm7" id="mHa-Ez-RTh"/>
+                        <outlet property="wordTextField" destination="K5q-r2-NWt" id="OYP-Sy-Zlz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-226.40000000000001" y="150.67466266866569"/>
+            <point key="canvasLocation" x="-311.19999999999999" y="145.27736131934034"/>
         </scene>
         <!--SettingVC-->
         <scene sceneID="3od-d5-gDL">
@@ -146,6 +143,47 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YIi-L0-TyF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139" y="-538"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9mw-rG-9p7">
+            <objects>
+                <viewController id="HVQ-wF-Exj" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mjD-xh-gop"/>
+                        <viewControllerLayoutGuide type="bottom" id="1dk-nH-fdj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YUg-dc-3Ih">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="type word of the day" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jTh-bv-o7U">
+                                <rect key="frame" x="16" y="308.5" width="343" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="OxB-oQ-r11"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="HVQ-wF-Exj" id="ddC-RW-Vc4"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1960784314" green="0.32156862749999998" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="jTh-bv-o7U" firstAttribute="leading" secondItem="YUg-dc-3Ih" secondAttribute="leading" constant="16" id="21v-sG-pOl"/>
+                            <constraint firstItem="jTh-bv-o7U" firstAttribute="centerX" secondItem="YUg-dc-3Ih" secondAttribute="centerX" id="547-ra-l0U"/>
+                            <constraint firstItem="jTh-bv-o7U" firstAttribute="centerY" secondItem="YUg-dc-3Ih" secondAttribute="centerY" id="COD-Pr-CSE"/>
+                            <constraint firstAttribute="trailing" secondItem="jTh-bv-o7U" secondAttribute="trailing" constant="16" id="U4T-TY-Xxa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="wordTextField" destination="jTh-bv-o7U" id="o7I-Vd-Jw7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gCb-Rv-OIE" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1926" y="209"/>
         </scene>
     </scenes>
 </document>

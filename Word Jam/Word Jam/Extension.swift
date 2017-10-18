@@ -76,6 +76,13 @@ extension HomeVC : SlideMenuControllerDelegate {
     }
 }
 extension String {
+    func contains(_ find: String) -> Bool{
+        return self.range(of: find) != nil
+    }
+    
+    func containsIgnoringCase(_ find: String) -> Bool{
+        return self.range(of: find, options: .caseInsensitive) != nil
+    }
     static func className(_ aClass: AnyClass) -> String {
         return NSStringFromClass(aClass).components(separatedBy: ".").last!
     }
@@ -212,7 +219,7 @@ extension UIViewController {
             
         }
         else if position == TOASTPOSITIONTOP{
-            label.frame = CGRect(x: self.view.bounds.size.width/2, y: self.view.bounds.minY+60, width: labelSize.width, height: labelSize.height)
+            label.frame = CGRect(x: self.view.bounds.size.width/2, y: self.view.bounds.minY+80, width: labelSize.width, height: labelSize.height)
             
         }
         label.center.x = self.view.center.x
